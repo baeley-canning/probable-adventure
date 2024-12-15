@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Get Started - Marketing Services</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+      <div class="flex items-center justify-between">
+        <div class="pt-2">
+          <img src="img/logo.svg" alt="" />
+        </div>
+        <div class="hidden space-x-6 md:flex">
+          <a href="/pricing.html" class="hover:text-darkGrayishBlue">Pricing</a>
+          <a href="/about.html" class="hover:text-darkGrayishBlue">About Us</a>
+        </div>
+        <a href="/" class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Home</a>
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <div class="md:hidden">
+        <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a href="/pricing.html">Pricing</a>
+          <a href="/about.html">About Us</a>
+          <a href="/">Home</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+            Get Started with Marketing Solutions Today
+          </h1>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Ready to grow your business? Fill out the form below, and one of our experts will get in touch with you.
+          </p>
+        </div>
+        <div class="md:w-1/2">
+          <img src="img/illustration-marketing.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Started Form Section -->
+    <section id="get-started" class="bg-white py-16">
+      <div class="container mx-auto p-6 max-w-3xl">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h2 class="text-3xl font-semibold text-center mb-8 text-darkGrayishBlue">Request a Call Back</h2>
+
+          <!-- Form -->
+          <form action="https://formspree.io/f/mayknjgn" method="POST" class="space-y-6">
+            <!-- Name -->
+            <div>
+              <label for="name" class="block text-lg font-semibold text-darkGrayishBlue mb-2">Your Name</label>
+              <input type="text" id="name" name="name" required class="w-full p-4 bg-lightGray border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brightRed focus:border-transparent placeholder:text-darkGrayishBlue" placeholder="Enter your name" />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email" class="block text-lg font-semibold text-darkGrayishBlue mb-2">Your Email</label>
+              <input type="email" id="email" name="email" required class="w-full p-4 bg-lightGray border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brightRed focus:border-transparent placeholder:text-darkGrayishBlue" placeholder="Enter your email" />
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="message" class="block text-lg font-semibold text-darkGrayishBlue mb-2">Message</label>
+              <textarea id="message" name="message" required class="w-full p-4 bg-lightGray border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brightRed focus:border-transparent placeholder:text-darkGrayishBlue" placeholder="Let us know how we can assist you" rows="6"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+              <button type="submit" class="p-3 px-6 text-white bg-brightRed rounded-full hover:bg-brightRedLight focus:outline-none focus:ring-2 focus:ring-brightRed">
+                Send Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue py-8">
+      <div class="container mx-auto text-center text-white">
+        <div class="flex justify-center space-x-6 mb-4">
+          <a href="https://facebook.com" class="hover:text-brightRed">
+            <img src="img/icon-facebook.svg" alt="Facebook" class="h-8" />
+          </a>
+          <a href="https://instagram.com" class="hover:text-brightRed">
+            <img src="img/icon-instagram.svg" alt="Instagram" class="h-8" />
+          </a>
+        </div>
+        <div class="my-4">
+          <p>&copy; 2024, All Rights Reserved</p>
+        </div>
+        <div>
+          <a href="/" class="hover:text-brightRed">Home</a> |
+          <a href="/pricing.html" class="hover:text-brightRed">Pricing</a> |
+          <a href="/about.html" class="hover:text-brightRed">About</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
