@@ -1,1 +1,167 @@
-<h1>Pricing Tester</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing - Manage Advertising</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
+    <style>
+        /* Custom styles for the form */
+        .focus:ring-brightRed:focus {
+            ring-color: #ff5f57;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+        <div class="flex items-center justify-between">
+            <div class="pt-2">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Manage Advertising" />
+                </a>
+            </div>
+            <div class="hidden space-x-6 md:flex">
+                <a href="/pricing.html" class="hover:text-darkGrayishBlue">Pricing</a>
+                <a href="/About.html" class="hover:text-darkGrayishBlue">About Us</a>
+            </div>
+            <a href="/Started.html" class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Get Started</a>
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="/pricing.html">Pricing</a>
+                <a href="/About.html">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-darkGrayishBlue mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Digital Marketing -->
+                <div class="flex flex-col items-center p-6 border border-lightGray rounded-lg shadow-lg hover:bg-orange-100">
+                    <i class="fas fa-bullhorn text-4xl text-brightRed mb-6"></i>
+                    <h3 class="text-xl font-semibold mb-4">Digital Marketing</h3>
+                    <p class="text-gray-600 text-lg">
+                        Build brand awareness and attract new customers with our effective marketing strategies. Our team will help you develop and implement a marketing plan that delivers results.
+                    </p>
+                </div>
+                <!-- Email Marketing -->
+                <div class="flex flex-col items-center p-6 border border-lightGray rounded-lg shadow-lg hover:bg-orange-100">
+                    <i class="fas fa-envelope text-4xl text-brightRed mb-6"></i>
+                    <h3 class="text-xl font-semibold mb-4">Email Marketing</h3>
+                    <p class="text-gray-600 text-lg">
+                        Email marketing is a powerful tool for nurturing leads, building relationships, and driving conversions. We create targeted campaigns to engage your subscribers and increase ROI.
+                    </p>
+                </div>
+                <!-- Social Media Marketing -->
+                <div class="flex flex-col items-center p-6 border border-lightGray rounded-lg shadow-lg hover:bg-orange-100">
+                    <i class="fas fa-share-alt text-4xl text-brightRed mb-6"></i>
+                    <h3 class="text-xl font-semibold mb-4">Social Media Marketing</h3>
+                    <p class="text-gray-600 text-lg">
+                        Social Media Marketing focuses on creating and sharing engaging content on platforms like Facebook, Instagram, and LinkedIn to build brand awareness and connect with your audience.
+                    </p>
+                </div>
+                <!-- Google Ads Management -->
+                <div class="flex flex-col items-center p-6 border border-lightGray rounded-lg shadow-lg hover:bg-orange-100">
+                    <i class="fas fa-search text-4xl text-brightRed mb-6"></i>
+                    <h3 class="text-xl font-semibold mb-4">Google Ads Management</h3>
+                    <p class="text-gray-600 text-lg">
+                        Google Ads is a Pay-Per-Click service that places ads at the top of search results or on related websites. We ensure your ads are optimized for targeted reach and measurable results.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Tiers Section -->
+    <section id="pricing-tiers" class="bg-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-darkGrayishBlue mb-8">Pricing Plans</h2>
+            <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+                <!-- Starter Plan -->
+                <div class="p-8 border border-lightGray bg-gradient-to-b from-orange-200 via-transparent to-transparent rounded-lg shadow-lg hover:bg-orange-200">
+                    <h3 class="text-2xl font-semibold mb-4">STARTER</h3>
+                    <p class="text-4xl font-bold text-brightRed mb-4">$550 <span class="text-sm text-gray-600">PER MONTH</span></p>
+                    <ul class="text-lg text-gray-600 mb-6 text-center">
+                        <li>Average 5-day task delivery</li>
+                        <li>Social Media: 1 post per week</li>
+                        <li>Remote services only</li>
+                        <li>Easy credit-card payments</li>
+                        <li>Pause or cancel at any time</li>
+                    </ul>
+                    
+                </div>
+                <!-- Standard Plan -->
+                <div class="p-8 border border-lightGray bg-gradient-to-b from-orange-200 via-transparent to-transparent rounded-lg shadow-lg hover:bg-orange-200">
+                    <h3 class="text-2xl font-semibold mb-4">STANDARD</h3>
+                    <p class="text-4xl font-bold text-brightRed mb-4">$990 <span class="text-sm text-gray-600">PER MONTH</span></p>
+                    <ul class=" text-lg text-gray-600 mb-6 text-center">
+                        <li>Average 4-day task delivery</li>
+                        <li>Social Media: 2 posts per week</li>
+                        <li>Remote services only</li>
+                        <li>Easy credit-card payments</li>
+                        <li>Pause or cancel at any time</li>
+                    </ul>
+                   
+                </div>
+                <!-- Super Plan -->
+                <div class="p-8 border border-lightGray bg-gradient-to-b from-orange-200 via-transparent to-transparent rounded-lg shadow-lg hover:bg-orange-200">
+                    <h3 class="text-2xl font-semibold mb-4">SUPER</h3>
+                    <p class="text-4xl font-bold text-brightRed mb-4">$1,650 <span class="text-sm text-gray-600">PER MONTH</span></p>
+                    <ul class="text-lg text-gray-600 mb-6 text-center">
+                        <li>Three services & tasks at a time</li>
+                        <li>Average 3-day task delivery</li>
+                        <li>Social Media: 5 posts per week</li>
+                        <li>On-site Services: 4 Hours per month</li>
+                        <li>Easy credit-card payments</li>
+                        <li>Pause or cancel at any time</li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue py-8">
+        <div class="container mx-auto text-center text-white">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://facebook.com" class="hover:text-brightRed">
+                    <img src="img/icon-facebook.svg" alt="Facebook" class="h-8" />
+                </a>
+                <a href="https://instagram.com" class="hover:text-brightRed">
+                    <img src="img/icon-instagram.svg" alt="Instagram" class="h-8" />
+                </a>
+            </div>
+            <div class="my-4">
+                <p>&copy; 2024, All Rights Reserved</p>
+            </div>
+            <div>
+                <a href="/" class="hover:text-brightRed">Home</a> |
+                <a href="/pricing.html" class="hover:text-brightRed">Pricing</a> |
+                <a href="/about.html" class="hover:text-brightRed">About</a> |
+                <a href="/privacy.html" class="hover:text-brightRed">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
