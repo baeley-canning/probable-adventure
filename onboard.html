@@ -4,62 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/img/favicon-32x32.png" type="image/x-icon">
-    <title>About Us - Manage Advertising</title>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <style>
-      /* Custom styles for the form */
-      .focus:ring-brightRed:focus {
-        ring-color: #ff5f57;
-      }
-    </style>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="/img/favicon-32x32.png" type="image/x-icon" />
+    <title>Manage Advertising</title>
   </head>
-  <body>
+  <body class="flex flex-col min-h-screen">
     <!-- Navbar -->
     <nav class="relative container mx-auto p-6">
       <div class="flex items-center justify-between">
+        <!-- Logo -->
         <div class="pt-2">
-          <a href="/">
-            <img src="img/logo.svg" alt="Manage Advertising" />
+          <a href="/" aria-label="Manage Advertising Home">
+            <img src="img/logo.svg" alt="Manage Advertising Logo" />
           </a>
         </div>
+        <!-- Desktop Navigation -->
         <div class="hidden space-x-6 md:flex">
-          <a href="/pricing.html" class="hover:text-darkGrayishBlue">Pricing</a>
-          <a href="/About.html" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="/index.html" class="hover:text-darkGrayishBlue">Home</a>
+          <a href="/onboard.html" class="hover:text-darkGrayishBlue">Onboard</a>
         </div>
-        <a
-          href="/Started.html"
-          class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
-          >Get Started</a
-        >
+        <!-- Mobile Hamburger Menu -->
         <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
           <span class="hamburger-top"></span>
           <span class="hamburger-middle"></span>
           <span class="hamburger-bottom"></span>
         </button>
       </div>
-
-      <div class="md:hidden">
-        <div
-          id="menu"
-          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-        >
-          <a href="/pricing.html">Pricing</a>
-          <a href="/About.html">About Us</a>
-        </div>
-      </div>
     </nav>
 
-    <!--Connection-->
-    <section id="Connection" class="bg-white py-16 flex items-center justify-center">
+    <!-- Onboard Section -->
+    <section id="Connection" class="bg-white py-16 flex-grow flex items-center justify-center">
       <div id="client-connect-widget" class="w-full max-w-md"></div>
       <script>
         !function() {
-          var e = document,
-              t = e.createElement("iframe");
+          var e = document, t = e.createElement("iframe");
           window.addEventListener(
             "message",
             function(e) {
@@ -68,7 +46,7 @@
               }
               t.height = (parseInt(e.data.height, 10) + 45) + "px";
             },
-            !1
+            false
           ),
           t.style.border = "0",
           t.style.width = "100%",
@@ -78,28 +56,5 @@
         }();
       </script>
     </section>
-    
 
-    <!-- Footer -->
-    <footer class="bg-veryDarkBlue py-8">
-      <div class="container mx-auto text-center text-white">
-        <div class="flex justify-center space-x-6 mb-4">
-          <a href="https://facebook.com" class="hover:text-brightRed">
-            <img src="img/icon-facebook.svg" alt="Facebook" class="h-8" />
-          </a>
-          <a href="https://instagram.com" class="hover:text-brightRed">
-            <img src="img/icon-instagram.svg" alt="Instagram" class="h-8" />
-          </a>
-        </div>
-        <div class="my-4">
-          <p>&copy; 2024, All Rights Reserved</p>
-        </div>
-        
-      </div>
-    </footer>
-  </body>
 </html>
-
-
-
-
