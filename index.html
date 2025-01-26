@@ -1,303 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="/img/favicon-32x32.png" type="image/x-icon">
-
-    <title>Manage Advertising</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="relative container mx-auto p-6">
-      <div class="flex items-center justify-between">
-        <div class="pt-2">
-          <a href="/">
-            <img src="img/logo.svg" alt="Manage Advertising" />
-          </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mr Steam provides professional steam cleaning services across Wellington, New Zealand, and surrounding areas. Affordable rates, high-quality results, no franchise hassle!">
+    <meta name="keywords" content="Steam Cleaning Wellington, Carpet Cleaning Wellington, Affordable Carpet Cleaning, Upholstery Cleaning, Mr Steam, Local Carpet Cleaning, Wellington Carpet Services">
+    <meta name="author" content="Mr Steam">
+    <title>Mr Steam - Professional Steam Cleaning Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-900 to-black py-6 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-4xl font-extrabold text-blue-400">Mr Steam</h1>
+            <nav>
+                <ul class="flex space-x-8 text-lg">
+                    <li><a href="#services" class="hover:text-blue-400">Services</a></li>
+                    <li><a href="/pricing.html" class="hover:text-blue-400">Pricing</a></li>
+                    <li><a href="#quote" class="hover:text-blue-400">Get a Quote</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="hidden space-x-6 md:flex">
-          <a href="/pricing.html" class="hover:text-darkGrayishBlue">Pricing</a>
-          <a href="/About.html" class="hover:text-darkGrayishBlue">About Us</a>
-          <a href="/onboard.html" class="hover:text-darkGrayishBlue">Onboard</a>
-        </div>
-        <a
-          href="/Started.html"
-          class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
-          >Get Started</a
-        >
-        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </button>
-      </div>
-
-      <div class="md:hidden">
-        <div
-          id="menu"
-          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-        >
-          <a href="/pricing.html">Pricing</a>
-          <a href="/About.html">About Us</a>
-          <a href="/onboard.html">Onboard</a>
-        </div>
-      </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="hero">
-      <div
-        class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
-      >
-        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-          <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
-            Boost Your Business with Expert Marketing Solutions
-          </h1>
-          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
-            From social media marketing to Google Ads management and advanced reporting, we provide all the tools to scale your business.
-          </p>
-          <div class="flex justify-center md:justify-start">
-            <a
-              href="/Started.html"
-              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-              >Get Started</a
-            >
-          </div>
+    <section class="bg-gradient-to-r from-blue-800 to-black text-center py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold text-blue-300 mb-6">Affordable Steam Cleaning You Can Trust</h2>
+            <p class="text-lg text-gray-300 mb-8">Servicing Wellington and surrounding areas for over 10 years. We match or beat any quote!</p>
+            <a href="#quote" class="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition">Get a Free Quote</a>
         </div>
-        
-      </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features">
-      <div
-        class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
-      >
-        <div class="flex flex-col space-y-12 md:w-1/2">
-          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
-            Our Core Marketing Services
-          </h2>
-          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
-            We offer a complete range of digital marketing services to help you achieve measurable growth and success online.
-          </p>
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-blue-300 mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-gray-700 rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-4">Carpet Cleaning</h3>
+                    <p>Restore your carpets to their original glory with our professional steam cleaning techniques.</p>
+                </div>
+                <div class="bg-gray-700 rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-4">Upholstery Cleaning</h3>
+                    <p>Remove dirt, stains, and odors from your furniture to make it look and feel brand new.</p>
+                </div>
+                <div class="bg-gray-700 rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-4">Stain Removal</h3>
+                    <p>We specialize in tough stain removal using industry-grade equipment and solutions.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="flex flex-col space-y-8 md:w-1/2">
-          <!-- List Item 1 -->
-          <div
-            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-          >
-            <div class="rounded-full bg-brightRedSupLight md:bg-transparent">
-              <div class="flex items-center space-x-2">
-                <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-                >
-                  01
-                </div>
-                <h3 class="text-base font-bold md:mb-4 md:hidden">
-                  Social Media Marketing
-                </h3>
-              </div>
-            </div>
-            <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
-                Social Media Marketing
-              </h3>
-              <p class="text-darkGrayishBlue">
-                Build your brand’s presence with strategic and engaging content across all major social media platforms.
-              </p>
-            </div>
-          </div>
-
-          <!-- List Item 2 -->
-          <div
-            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-          >
-            <div class="rounded-full bg-brightRedSupLight md:bg-transparent">
-              <div class="flex items-center space-x-2">
-                <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-                >
-                  02
-                </div>
-                <h3 class="text-base font-bold md:mb-4 md:hidden">
-                  Google Ads Management
-                </h3>
-              </div>
-            </div>
-            <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
-                Google Ads Management
-              </h3>
-              <p class="text-darkGrayishBlue">
-                Maximize ROI with highly targeted Google Ads campaigns designed to convert and drive traffic.
-              </p>
-            </div>
-          </div>
-
-          <!-- List Item 3 -->
-          <div
-            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-          >
-            <div class="rounded-full bg-brightRedSupLight md:bg-transparent">
-              <div class="flex items-center space-x-2">
-                <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-                >
-                  03
-                </div>
-                <h3 class="text-base font-bold md:mb-4 md:hidden">
-                  Analytics & Reporting
-                </h3>
-              </div>
-            </div>
-            <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
-                Analytics & Reporting
-              </h3>
-              <p class="text-darkGrayishBlue">
-                Stay on top of your marketing performance with customized reports that provide key insights and trends.
-              </p>
-            </div>
-          </div>
-
-          <!-- List Item 4 -->
-          <div
-            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
-          >
-            <div class="rounded-full bg-brightRedSupLight md:bg-transparent">
-              <div class="flex items-center space-x-2">
-                <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
-                >
-                  04
-                </div>
-                <h3 class="text-base font-bold md:mb-4 md:hidden">
-                  Social Media Automation
-                </h3>
-              </div>
-            </div>
-            <div>
-              <h3 class="hidden mb-4 text-lg font-bold md:block">
-                Social Media Automation
-              </h3>
-              <p class="text-darkGrayishBlue">
-                Automate your social media posting, engagement, and analytics to save time and stay consistent.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
-        <h2 class="text-4xl font-bold text-center">
-          What Our Clients Say
-        </h2>
-        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
-          <div
-            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3"
-          >
-            <img src="img/avatar-shanai.png" class="w-16 -mt-14" alt="" />
-            <h5 class="text-lg font-bold">Ani</h5>
-            <p class="text-sm text-darkGrayishBlue">
-              “Through targeted social media campaigns, we've grown our audience and strengthened customer relationships.”
-            </p>
-          </div>
-          <div
-            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
-          >
-            <img src="img/avatar-ali.png" class="w-16 -mt-14" alt="" />
-            <h5 class="text-lg font-bold">Ali Bravo</h5>
-            <p class="text-sm text-darkGrayishBlue">
-              “The team did an amazing job driving high-quality traffic.”
-            </p>
-          </div>
-          <div
-            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
-          >
-            <img src="img/avatar-richard.png" class="w-16 -mt-14" alt="" />
-            <h5 class="text-lg font-bold">Richard Watts</h5>
-            <p class="text-sm text-darkGrayishBlue">
-              “The marketing analytics reports gave us clear insights, helping us to optimize our campaigns and grow efficiently.”
-            </p>
-          </div>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gradient-to-r from-black to-blue-800 text-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-blue-300 mb-6">About Mr Steam</h2>
+            <p class="text-lg">We are a locally owned and operated steam cleaning business serving Wellington and beyond. With over a decade of experience, we offer the same high-quality techniques and equipment as big-name franchises like ChemDry and Jae's, but at a fraction of the cost. No corporate hassle, just top-notch service from Mr Steam himself.</p>
         </div>
-        <div class="my-16">
-          <a
-            href="/Started.html"
-            class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-            >Get Started</a
-          >
-        </div>
-      </div>
     </section>
 
-    <!-- CTA Section -->
-    <section id="cta" class="bg-brightRed">
-      <div
-        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
-      >
-        <h2 class="text-5xl font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left">
-          Start Growing Your Business Today
-        </h2>
-        <div>
-          <a
-            href="/Started.html"
-            class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
-            >Get Started</a
-          >
+    <!-- Quote Section -->
+    <section id="quote" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-blue-300 mb-8">Get a Free Quote</h2>
+            <form class="max-w-2xl mx-auto bg-gray-700 p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-left font-semibold mb-2">Your Name</label>
+                    <input type="text" id="name" name="name" class="w-full border border-gray-600 rounded-lg p-3 bg-gray-800 text-gray-100">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-left font-semibold mb-2">Your Email</label>
+                    <input type="email" id="email" name="email" class="w-full border border-gray-600 rounded-lg p-3 bg-gray-800 text-gray-100">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-left font-semibold mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full border border-gray-600 rounded-lg p-3 bg-gray-800 text-gray-100"></textarea>
+                </div>
+                <button type="submit" class="px-8 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition">Send</button>
+            </form>
         </div>
-      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-r from-blue-800 to-black text-center text-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-blue-300 mb-6">Contact Us</h2>
+            <p class="text-lg mb-4">Email: <a href="mailto:mrsteam@example.com" class="underline hover:text-blue-400">mrsteam@example.com</a></p>
+            <p class="text-lg mb-4">Phone: <a href="tel:+64123456789" class="underline hover:text-blue-400">+64 123 456 789</a></p>
+            <p class="text-lg">Service Areas: Wellington, Upper Hutt, Lower Hutt, Whitby, Porirua, Levin, Marton, Paraparaumu, and more.</p>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-veryDarkBlue">
-      <div
-        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
-      >
-        <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
-          <div class="mx-auto my-6 text-center text-white md:hidden">
-            Copyright &copy; 2024, All Rights Reserved
-          </div>
-          <div>
-            <img src="img/logo-white.svg" class="h-8" alt="" />
-          </div>
-          <div class="flex justify-center space-x-4">
-            <a href="https://www.facebook.com/ManageAdsnz/">
-              <img src="img/icon-facebook.svg" alt="" class="h-8" />
-            </a>
-        
-            <a href="https://www.instagram.com/manageadsnz">
-              <img src="img/icon-instagram.svg" alt="" class="h-8" />
-            </a>
-          </div>
+    <footer class="bg-black text-gray-400 py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Mr Steam. All rights reserved.</p>
         </div>
-        <div class="flex flex-col space-y-3 text-white items-center">
-          <a href="/" class="hover:text-brightRed">Home</a>
-          <a href="/pricing.html" class="hover:text-brightRed">Pricing</a>
-          <a href="/About.html" class="hover:text-brightRed">About</a>
-          <a href="/Privacy.html" class="hover:text-brightRed">Privacy Policy</a>
-        </div>
-        </div>
-
-        <div class="flex flex-col justify-between">
-          <form>
-            <div class="flex space-x-3">
-            </div>
-          </form>
-          <div class="hidden text-white md:block">
-            Copyright &copy; 2024, All Rights Reserved
-          </div>
-        </div>
-      </div>
     </footer>
-
-    <script src="js/script.js"></script>
-  </body>
+</body>
 </html>
